@@ -137,5 +137,48 @@
         </object-param>
       </init-params>
     </component-plugin>
+    <component-plugin>
+      <name>exo_space_templates</name>
+      <set-method>initListener</set-method>
+      <type>org.exoplatform.portal.config.NewPortalConfigListener</type>
+      <init-params>
+        <object-param>
+          <name>portal.configuration</name>
+          <object type="org.exoplatform.portal.config.NewPortalConfig">
+            <field name="predefinedOwner">
+              <collection type="java.util.HashSet">
+                <value>
+                  <string>announcement</string>
+                </value>
+                <value>
+                  <string>circle</string>
+                </value>
+                <value>
+                  <string>community</string>
+                </value>
+                <value>
+                  <string>project</string>
+                </value>
+                <value>
+                  <string>space</string>
+                </value>
+              </collection>
+            </field>
+            <field name="ownerType">
+              <string>group_template</string>
+            </field>
+            <field name="location">
+              <string>war:/conf/digital-workplace/</string>
+            </field>
+            <field name="override">
+              <boolean>${exo.spaceTemplates.portalConfig.metadata.override:true}</boolean>
+            </field>
+            <field name="importMode">
+              <string>${exo.spaceTemplates.portalConfig.metadata.importmode:insert}</string>
+            </field>
+          </object>
+        </object-param>
+      </init-params>
+    </component-plugin>
   </external-component-plugins>
 </configuration>
