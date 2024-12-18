@@ -175,6 +175,12 @@
             <icon>fas fa-edit</icon>
             <page-reference>portal::administration::editors</page-reference>
           </node>
+          <node>
+            <name>documents-trash-administration</name>
+            <label>#{portal.administration.documents-trash}</label>
+            <icon>fa fa-trash</icon>
+            <page-reference>portal::administration::documentsTrashAdministration</page-reference>
+          </node>
         </node>
         <node>
           <name>news-settings</name>
