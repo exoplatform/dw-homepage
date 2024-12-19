@@ -344,7 +344,7 @@
               <boolean>true</boolean>
             </field>
             <field name="updateNavigation">
-              <boolean>true</boolean>
+              <boolean>false</boolean>
             </field>
             <field name="configPath">
               <string>war:/conf/sites/</string>
