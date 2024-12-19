@@ -10,6 +10,5 @@
   <import>war:/conf/digital-workplace/homepage-deployment-configuration.xml</import>
   <import>war:/conf/digital-workplace/portal-upgrade-configuration.xml</import>
   <import>war:/conf/digital-workplace/dynamic-container-configuration.xml</import>
-  <import>war:/conf/digital-workplace/feature-flags-configuration.xml</import>
 
 </configuration>
