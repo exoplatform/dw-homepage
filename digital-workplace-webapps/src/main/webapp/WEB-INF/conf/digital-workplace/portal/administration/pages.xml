@@ -212,7 +212,7 @@
       </portlet-application>
     </container>
   </page>
-  
+
   <page profiles="ecms">
     <name>editors</name>
     <title>Editors Administration</title>
@@ -229,6 +229,26 @@
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
       </portlet-application>
+    </container>
+  </page>
+
+  <page profiles="documents">
+    <name>documentsTrashAdministration</name>
+    <title>Documents Trash Administration</title>
+    <access-permissions>*:/platform/administrators</access-permissions>
+    <edit-permission>manager:/platform/administrators</edit-permission>
+    <show-max-window>false</show-max-window>
+    <container template="system:/groovy/portal/webui/container/UIPageLayout.gtmpl">
+      <section-columns>
+        <column col-span="12">
+          <portlet-application>
+            <portlet>
+              <application-ref>documents</application-ref>
+              <portlet-ref>TrashManagement</portlet-ref>
+            </portlet>
+          </portlet-application>
+        </column>
+      </section-columns>
     </container>
   </page>
     
