@@ -97,10 +97,17 @@
               <string>war:/conf/digital-workplace</string>
             </field>
             <field name="override">
-              <boolean>${io.meeds.administration.portalConfig.metadata.override:true}</boolean>
+              <boolean>${exo.administration.portalConfig.metadata.override:true}</boolean>
             </field>
+            <!--
+              we create here a different property from io.meeds.administration.portalConfig.metadata.importmode
+              If you need to reload exo part of administration configuration, you need to reload all the administration configuration.
+              Else, the PageImporter will REMOVE meeds administration pages.
+              So, to reload administration portal (meeds part or exo part), use
+              io.meeds.administration.portalConfig.metadata.importmode=overwrite
+            -->
             <field name="importMode">
-              <string>${io.meeds.administration.portalConfig.metadata.importmode:insert}</string>
+              <string>${exo.administration.portalConfig.metadata.importmode:insert}</string>
             </field>
           </object>
         </object-param>
