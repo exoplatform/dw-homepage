@@ -18,7 +18,7 @@
 -->
 <page-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://www.exoplatform.org/xml/ns/gatein_objects_1_8 http://www.exoplatform.org/xml/ns/gatein_objects_1_8"
-          xmlns="http://www.exoplatform.org/xml/ns/gatein_objects_1_8">    
+          xmlns="http://www.exoplatform.org/xml/ns/gatein_objects_1_8">
   <page>
     <name>membershipsManagement</name>
     <title>Memberships Management</title>
